@@ -10,20 +10,40 @@ class Projects extends Component {
     toggleCategories() {
         if (this.state.activeTab === 0) {
             return (
-                <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://reactjs.org/logo-og.png) center / cover' }}>React project #1</CardTitle>
-                    <CardText>
-                        App on something
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Github</Button>
-                        <Button colored>Heroku</Button>
-                        <Button colored>Its Live</Button>
-                    </CardActions>
-                    <CardMenu style={{ color: '#fff' }}>
-                        <IconButton name="share"/>
-                    </CardMenu>
-                </Card>
+                <div className="projects-grid">
+                    {/* React projects */}
+                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://reactjs.org/logo-og.png) center / cover' }}>React project #1</CardTitle>
+                        <CardText>
+                            App on something
+                        </CardText>
+                        <CardActions border>
+                            <Button colored>Github</Button>
+                            <Button colored>Heroku</Button>
+                            <Button colored>Its Live</Button>
+                        </CardActions>
+                        <CardMenu style={{ color: '#fff' }}>
+                            <IconButton name="share"/>
+                        </CardMenu>
+                    </Card>
+
+                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://reactjs.org/logo-og.png) center / cover' }}>React project #1</CardTitle>
+                        <CardText>
+                            App on something
+                        </CardText>
+                        <CardActions border>
+                            <Button colored>Github</Button>
+                            <Button colored>Heroku</Button>
+                            <Button colored>Its Live</Button>
+                        </CardActions>
+                        <CardMenu style={{ color: '#fff' }}>
+                            <IconButton name="share" />
+                        </CardMenu>
+                    </Card>
+
+
+                </div>
             )
         } else if (this.state.activeTab === 1){
             return (
@@ -44,6 +64,8 @@ class Projects extends Component {
             )
         }else if (this.state.activeTab === 2) {
             return (
+                <div className="projects-grid">
+                {/* PostgreSQL projects */}
                 <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
                     <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://stackify.com/wp-content/uploads/2018/11/Performance-Tuning-PostgreSQL-3-1280x720.jpg) center / cover' }}>PostgreSQL project #1</CardTitle>
                     <CardText>
@@ -57,7 +79,24 @@ class Projects extends Component {
                     <CardMenu style={{ color: '#fff' }}>
                         <IconButton name="share" />
                     </CardMenu>
-                </Card>
+                    </Card>
+                    
+                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://stackify.com/wp-content/uploads/2018/11/Performance-Tuning-PostgreSQL-3-1280x720.jpg) center / cover' }}>PostgreSQL project #1</CardTitle>
+                        <CardText>
+                            App on something
+                    </CardText>
+                        <CardActions border>
+                            <Button colored>Github</Button>
+                            <Button colored>Heroku</Button>
+                            <Button colored>Its Live</Button>
+                        </CardActions>
+                        <CardMenu style={{ color: '#fff' }}>
+                            <IconButton name="share" />
+                        </CardMenu>
+                    </Card>
+
+                </div>
             )
         } else if (this.state.activeTab === 3) {
             return (
@@ -88,14 +127,14 @@ class Projects extends Component {
                     <Tab>PostgreSQL</Tab>
                     <Tab>MongoDB</Tab>
                 </Tabs>
-                <section className="projects-grid">
-                    <Grid className="projects-grid">
+                
+                    <Grid>
                         <Cell col={12}>
                             <div className="content">{this.toggleCategories}</div>
                         </Cell>
                     </Grid>
                     {this.toggleCategories()}
-                </section>
+                
             </div>
         )
     }
