@@ -27,21 +27,54 @@ class Projects extends Component {
             )
         } else if (this.state.activeTab === 1){
             return (
-                <div>
-                    <h1>this is NodeJs</h1>
-                </div>
+                <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://cdn-media-1.freecodecamp.org/images/1*DF0g7bNW5e2z9XS9N2lAiw.jpeg) center / cover' }}>NodeJs project #1</CardTitle>
+                    <CardText>
+                        App on something
+                    </CardText>
+                    <CardActions border>
+                        <Button colored>Github</Button>
+                        <Button colored>Heroku</Button>
+                        <Button colored>Its Live</Button>
+                    </CardActions>
+                    <CardMenu style={{ color: '#fff' }}>
+                        <IconButton name="share" />
+                    </CardMenu>
+                </Card>
             )
         }else if (this.state.activeTab === 2) {
             return (
-                <div>
-                    <h1>this is PostgreSQL</h1>
-                </div>
+                <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://stackify.com/wp-content/uploads/2018/11/Performance-Tuning-PostgreSQL-3-1280x720.jpg) center / cover' }}>PostgreSQL project #1</CardTitle>
+                    <CardText>
+                        App on something
+                    </CardText>
+                    <CardActions border>
+                        <Button colored>Github</Button>
+                        <Button colored>Heroku</Button>
+                        <Button colored>Its Live</Button>
+                    </CardActions>
+                    <CardMenu style={{ color: '#fff' }}>
+                        <IconButton name="share" />
+                    </CardMenu>
+                </Card>
             )
         } else if (this.state.activeTab === 3) {
             return (
-                <div>
-                    <h1>this is MongoDB</h1>
-                </div>
+                <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://blog-assets.spot.io/app/uploads/2017/07/17202136/MongoDB-1440x728.jpg) center / cover' }}>MongoDB project #1</CardTitle>
+                    <CardText>
+                        App on something
+                    </CardText>
+                    <CardActions border>
+                        <Button colored>Github</Button>
+                        <Button colored>Heroku</Button>
+                        <Button colored>Its Live</Button>
+                    </CardActions>
+                    <CardMenu style={{ color: '#fff' }}>
+                        <IconButton name="share" />
+                    </CardMenu>
+                </Card>
             )
         }
     }
