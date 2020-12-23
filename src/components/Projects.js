@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Tabs, Tab } from 'react-mdl'
+import {Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText } from 'react-mdl'
 
 class Projects extends Component {
     constructor(props) {
@@ -10,9 +10,20 @@ class Projects extends Component {
     toggleCategories() {
         if (this.state.activeTab === 0) {
             return (
-                <div>
-                    <h1>this is React</h1>
-                </div>
+                <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://reactjs.org/logo-og.png) center / cover' }}>React project #1</CardTitle>
+                    <CardText>
+                        App on something
+                    </CardText>
+                    <CardActions border>
+                        <Button colored>Github</Button>
+                        <Button colored>Heroku</Button>
+                        <Button colored>Its Live</Button>
+                    </CardActions>
+                    <CardMenu style={{ color: '#fff' }}>
+                        <IconButton name="share"/>
+                    </CardMenu>
+                </Card>
             )
         } else if (this.state.activeTab === 1){
             return (
@@ -45,6 +56,11 @@ class Projects extends Component {
                     <Tab>MongoDB</Tab>
                 </Tabs>
                 <section className="projects-grid">
+                    <Grid className="projects-grid">
+                        <Cell col={12}>
+                            <div className="content">{this.toggleCategories}</div>
+                        </Cell>
+                    </Grid>
                     {this.toggleCategories()}
                 </section>
             </div>
