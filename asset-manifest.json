@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Natrez-portfolio/static/css/main.2a657298.chunk.css",
+    "main.js": "/Natrez-portfolio/static/js/main.5dc0e2e4.chunk.js",
+    "main.js.map": "/Natrez-portfolio/static/js/main.5dc0e2e4.chunk.js.map",
+    "runtime-main.js": "/Natrez-portfolio/static/js/runtime-main.207bf6bf.js",
+    "runtime-main.js.map": "/Natrez-portfolio/static/js/runtime-main.207bf6bf.js.map",
+    "static/css/2.2f2c82fc.chunk.css": "/Natrez-portfolio/static/css/2.2f2c82fc.chunk.css",
+    "static/js/2.e2c2627d.chunk.js": "/Natrez-portfolio/static/js/2.e2c2627d.chunk.js",
+    "static/js/2.e2c2627d.chunk.js.map": "/Natrez-portfolio/static/js/2.e2c2627d.chunk.js.map",
+    "static/js/3.d821b0d6.chunk.js": "/Natrez-portfolio/static/js/3.d821b0d6.chunk.js",
+    "static/js/3.d821b0d6.chunk.js.map": "/Natrez-portfolio/static/js/3.d821b0d6.chunk.js.map",
+    "index.html": "/Natrez-portfolio/index.html",
+    "static/css/2.2f2c82fc.chunk.css.map": "/Natrez-portfolio/static/css/2.2f2c82fc.chunk.css.map",
+    "static/css/main.2a657298.chunk.css.map": "/Natrez-portfolio/static/css/main.2a657298.chunk.css.map",
+    "static/js/2.e2c2627d.chunk.js.LICENSE.txt": "/Natrez-portfolio/static/js/2.e2c2627d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.207bf6bf.js",
+    "static/css/2.2f2c82fc.chunk.css",
+    "static/js/2.e2c2627d.chunk.js",
+    "static/css/main.2a657298.chunk.css",
+    "static/js/main.5dc0e2e4.chunk.js"
+  ]
+}
