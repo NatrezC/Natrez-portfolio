@@ -11,6 +11,7 @@ class App extends Component {
         <Layout>
           <Header className='header-color' title="Natrez Portfolio" scroll>
             <Navigation>
+              <Link to="/">Home</Link>
               <Link to="/About">About</Link>
               <Link to="/Contact">Contact</Link>
               <Link to="/Projects">Projects</Link>
@@ -19,6 +20,7 @@ class App extends Component {
           </Header>
           <Drawer title="Title">
             <Navigation>
+              <Link to="/">Home</Link>
               <Link to="/About">About</Link>
               <Link to="/Contact">Contact</Link>
               <Link to="/Projects">Projects</Link>
